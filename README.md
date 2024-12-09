@@ -28,7 +28,7 @@ La **Clasificación y recomendación de canciones en base a las emociones de par
 
 
 - **Modelos de Clasificación**: Modelos supervisados K-Means.
-- **Evaluación**: Métricas como precisión, recall, F1-score y validación cruzada.
+- **Evaluación**: Métricas como precisión, recall, F1-score.
 
 
 ### Tecnologías
@@ -80,32 +80,10 @@ Este sistema se usará para agrupar canciones en diferentes categorías emociona
 
 ### Preparación de Datos
 1. En este proyecto se utilizaron 2 datasets que fueron combinados con el objetivo de desarrollar un sistema para la clasificación y recomendación de canciones basado en las emociones de los usuarios de Spotify.
-Spotify dataset:  Este dataset contiene información relacionada con las canciones de Spotify. Este dataset comprende 24 columnas:
-- Artist, string.
-- Track, string.
-- Album, string.
-- Album_type, string.
-- Danceability, float64.
-- Energy, float64.
-- Loudness, float64.
-- Speechiness, float64.
-- Acousticness, float64.
-- Instrumentalness, float64.
-- Liveness, float64.
-- Valence, float64.
-- Tempo, float64.
-- Duration_min, float64.
-- Title, string.
-- Channel, string.
-- Views, float64.
-- Likes, float64.
-- Comments, float64.
-- Licensed, string.
-- Official_video, string.
-- Stream, float64.
-- EnergyLiveness, float64.
-- Most_playedon, string.
-En total tiene 20595 registros, Las columnas seleccionadas son: danceability (danzabilidad), energy (energía), loudness (ruido), speechiness (canto), acousticness (acusticidad), instrumentalness (instrumentalidad), liveness (viveza), valence (valencia), tempo y duration_min (duración en minutos), 
+- Spotify dataset:  Este dataset contiene información relacionada con las canciones de Spotify. Consta de 24 columnas y 20,595 registros, cada uno representando una canción. Entre las columnas más importantes se encuentran: danceability (danzabilidad), energy (energía), loudness (nivel de ruido), speechiness (presencia de canto o elementos hablados), acousticness (probabilidad de ser acústica), instrumentalness (presencia de elementos instrumentales), liveness (sensación de estar en vivo), valence (positividad emocional), tempo (velocidad del ritmo) y duration_min (duración en minutos).
+- Positive Affirmations Dataset: Contiene información relacionada con afirmaciones positivas y sus respectivas emociones. Consta de las siguientes columnas principales: Affirmaton (contenido textual de la afirmacion) y Tag (Categoria o emocion asociada a la afirmacion, como love, happiness, etc).
+
+
 2. El proyecto está diseñado en 2 etapas: Clasificador de emociones para enriquecer preferencias musicales, Clasificador de emociones para música escuchada en el historial reciente
 
 
